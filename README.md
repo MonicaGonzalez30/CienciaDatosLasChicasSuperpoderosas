@@ -4,4 +4,4 @@
   #Lopez Salazar Leticia Esmeralda
   #Luna Ruiz Luis Ernesto
  
- #Este repositorio va ser para la materia de Programacion Para Ciencia de Datos
+ #Este repositorio va a ser para la materia de Programacion para Ciencia de Datos
