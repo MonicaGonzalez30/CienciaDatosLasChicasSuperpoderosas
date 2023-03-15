@@ -5,3 +5,6 @@ print("Esme - Hola chicas")
 
 for i in range(11):
     print(i)
+
+
+def cubo(x): return x**3
