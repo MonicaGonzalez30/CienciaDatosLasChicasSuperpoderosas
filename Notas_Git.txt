@@ -76,4 +76,14 @@ Ramas:
 NOTA: si en terminal se queda realizando una operacion y no aparece la linea para ejecutar otro comando, picar q
 
 
-NOTA
+NOTA: Para regresar a una version anterior del codigo ("Regresar alguno de los commits")
+Ponemos git log para ver que cambios se habian hecho
+Y con git checkout (copiamos la direccion que creemos que este. y lo pegamos para ver los cambios que se habian hecho)
+
+git branch -f 'nombre de la rama'
+			-f = forzada
+
+git graph --Muestra graficamente como se han modificado las ramas
+
+Para borrar la rama que ya no deseamos es
+git branch -d rama_que_queremos_borrar
