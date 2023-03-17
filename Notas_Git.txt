@@ -1,0 +1,77 @@
+jupyter lab: Levanta el servidor (se realiza una vez de estar en la carpeta deseada e inicializar el venv)
+Se copia la url que te muestra al final para poder abrirlo en internet
+
+%run es para ejecutar un script
+%%time para calcular el tiempo de todo un bloque de codigo
+%time para el tiempo de solo una linea de codigo
+
+File -> Shut Down para terminar los procesos del Jupyter lab
+
+
+cp (Copia): cp ../../Marzo/* . (Va a la ruta anterior, anterior, capeta marzo, todo lo de marzo lo copia a la ruta actual)
+
+
+git status   -- Muestra los cambios que se han realizado y aun no se suben a GitHub, o en cierto caso el estado del proyecto
+git add .   -- Marca los archivos que se crearon y se deben añadir (fase staged: previo a ser guardado en la BD local)
+git commit -m "Commit"    -- Los cambios que se realizan los guarda ahora si en la BD
+git remote -v     -- Muestra las operaciones que se pueden hacer: fetch es para obtener archivos, push es para subir archivos
+git push origin main
+
+
+
+15/03/2023
+
+De forma local:
+ * Staged:
+	git add . (. para agregar todos los archivos, si no, se pone el nombre del archivo)
+ * Commit:
+	git commit -m "Paso 1, leer archivos"  (se escribe una "fotografia" de lo que paso en la fecha donde se hace el commit)
+
+Conectar lo local con la nube:
+	git remote (repositorio en la nube) add (agregar un nuevo repo) origin (nombre repositorio) url (http o ssh)
+
+
+NOTA: Siempre hacer un pull ** antes de hacer cambios en el repositorio, este comando hace 2 operaciones:
+ * fetch (lee la informacion de la nube)
+ * commit (descarga o escribe de forma local todos los cambios que se han realizado en la nube) 
+
+En la nube:
+ * Obtener cambios:
+ 	** git pull origin main (obtiene del origen de la rama main lo que exista, si hay conflictos (modificacion de archivos en la misma seccion de codigo) te avisa para corregirlo de forma manual y si no, descarga la información sin problemas)
+ * Subir cambios:
+	git push origin main (main puede cambiar dependiendo de la rama en donde se quieran subir los cambios, si es en el main significa que se sobreescribe sobre la rama principal)
+
+Cambio pequeño: hotfix (operaciones o cambios muy simples)
+Cambios más grandes: nombreGuía (ejemplo: feature1)
+
+NOTA: Cuando se hacen cambios en una rama que no sea main:
+	merge/pull request (se realiza para mezclar los cambios de la rama extra con la main, te pregunta si quieres hacerlo y si le pones que sí, el administrador del proyecto tiene que confirmar los cambios y una vez que se hace eso, se mezclan las ramas y la rama extra se destruye en la nube)
+
+bhtgvfrehdcxiwslkmqapz   ^-^   :3    n.n    >-<   
+
+
+git log   -- Muestra los commit realizados: contienen un hash para indentificar a cada commit, muestra quien y cuando lo hizo, y el texto del commit
+
+	* comit sjfkdjofjeosjfdjoisjdofj (head->main [local], origin/main [remota])  ---Esto significa que todos los cambios se encuentran igual (en el mismo etado)
+
+	* comit sjfkdjofjeosjfdjoisjdofj (head->main)  
+	* comit sjfkdjofjeosjfdjoisjdofj (origin/main)  ---Esto significa que se han realizado cambios y se llego hasta el commit, pero no se ha hecho push 
+
+
+Para cambiarse de snap shot (te cambias a otro commit, para regresar a otro estado):
+	git checkout eihnsknfdsorjeowiytnnfosoiro (hash del commit al que deseas cambiarte) --Despues:
+		* git switch - (te regresa al estado donde estabas o el ultimo cambio)
+		* git switch -c nombreRama (crea una nueva rama con el estado actual para seguir trabajando)
+	Nota: git pull origin main (sirve para recuperar todo lo que se encuentra en la nube por si se borra algo en forma local)
+
+Ramas:
+ * Crear rama:
+	git branch nombreRamaExtra
+ * Mostar ramas:
+	git branch
+ * Escribir los cambios de la rama extra en la rama main (estando en la rama main):
+	git merge ramaExtra
+
+
+NOTA: si en terminal se queda realizando una operacion y no aparece la linea para ejecutar otro comando, picar q
+
