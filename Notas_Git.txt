@@ -75,3 +75,5 @@ Ramas:
 
 NOTA: si en terminal se queda realizando una operacion y no aparece la linea para ejecutar otro comando, picar q
 
+
+NOTA
