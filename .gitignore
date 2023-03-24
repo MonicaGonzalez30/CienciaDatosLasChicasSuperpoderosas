@@ -1,0 +1,4 @@
+# Carpetas y archivos que no se suben a GitHub
+
+#Carpeta del entorno virtual
+/env
