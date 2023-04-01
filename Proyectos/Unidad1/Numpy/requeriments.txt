@@ -1,0 +1,5 @@
+Librerias usadas para la manipulación de datos con Python:
+
+matplotlib.pyplot
+pandas
+numpy
