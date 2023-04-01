@@ -1,5 +1,5 @@
 Librerias usadas para la manipulación de datos con Python:
 
-matplotlib.pyplot
-pandas
-numpy
+matplotlib==3.7.1
+pandas==1.5.3
+numpy==1.24.2
