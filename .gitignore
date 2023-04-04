@@ -2,3 +2,5 @@
 
 #Carpeta del entorno virtual
 /env
+#Carpeta generada al usar Jupyter lab
+/Proyectos/Unidad1/Numpy/.ipynb_checkpoints
